@@ -1,0 +1,24 @@
+
+
+
+<div class="shadow-sm p-3 mb-5 bg-body rounded mx-auto " style='width:600px' >
+<%= render @friend %>
+
+<div>
+  <%= link_to "Edit this friend", edit_friend_path(@friend), class:'btn btn-secondary' %> 
+  <%= link_to "Back to friends", friends_path, class:'btn btn-dark' %>
+</div>
+
+<br></br>
+
+<div>
+  <%= button_to "Destroy this friend", @friend, method: :delete, class:'btn btn-danger' %>
+
+</div>
+
+</div>
+
+
+
+
+
